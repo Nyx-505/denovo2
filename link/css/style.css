@@ -1,0 +1,86 @@
+body {
+    background-color: hwb(266 57% 20%);
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial;
+    background: linear-gradient(120deg, hwb(0 9% 36%), #770303);
+    color: #ffffffc5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Estilo da foto de perfil */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    border: 3px solid #ffffff; /* Borda branca estilizada (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra para dar destaque */
+    margin-bottom: 10px;
+}
+
+/* Centraliza o cabeçalho e alinha o texto */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    margin: 15px 0 5px; /*cima | baixo | esquerda | direita*/
+    font-size: 26px;
+}
+
+header p {
+    margin: 2px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centraliza e impede que os cards estiquem 100% da largura */
+}
+
+.card {
+    background: rgba(225, 225, 225, 0.1);
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    
+    width: 250px; 
+    box-sizing: border-box;
+}
+
+.card {
+  /* ... seu código atual ... */
+  margin-bottom: 15px; /* Adiciona espaçamento na parte inferior de cada card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
