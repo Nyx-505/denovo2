@@ -1,0 +1,74 @@
+/* Centraliza a página inteira e define estilo base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lab(28.27% 47.84 39.14);
+}
+
+/* Centraliza o menu de navegação */
+header {
+    width: 100%;
+    background-color: lch(100% 0.01 296.81);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: hsl(310, 44%, 61%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centraliza o container principal */
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Alinha os cards ao centro e os distribui lado a lado ou em coluna */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+/* Estiliza e centraliza os textos/imagens dentro de cada card */
+.card {
+    background: #fffafa;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px #e6dcdc;
+    
+    /* Centraliza os elementos internos do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Deixa a foto quadrada e ajustada sem distorcer */
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Corta os excessos da imagem para preencher o quadrado perfeito */
+    border-radius: 8px; /* Cantos suavemente arredondados combinando com o card */
+    margin: 15px 0;
+}
